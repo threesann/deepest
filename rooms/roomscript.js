@@ -12,6 +12,14 @@ async function textDisplay(text) {
         voice.pause()
         voice.currentTime = 0;
       }
+    
+    // temp code that displays msg... be sure to remove
+    await new Promise(r => setTimeout(r,5000));
+    document.getElementById("location").src="../assets/img.png"
+    document.getElementById("location").style.filter="brightness(0.02)"
+    textbox.textContent = " ";
+    var audio = new Audio('/audio/mystery.mp3');
+    audio.play();
 }
 
 async function textClear() {
