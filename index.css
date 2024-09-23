@@ -19,3 +19,7 @@ body {
 .door {
     cursor: pointer;
 }
+
+audio {
+    display:none;
+}

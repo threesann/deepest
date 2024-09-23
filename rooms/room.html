@@ -1,10 +1,18 @@
 <html>
 <head>
-  <title>room</title>
+  <title>darkroom</title>
   <link rel="stylesheet" href="/index.css">
+  <script src="roomscript.js" defer></script>
 </head>
 
 <body>
-  <img src="/assets/img.png" style="width: 100%; height: 100%; filter: brightness(0.01)">
+  <div style="position:relative;">
+    <img src="/assets/darkroom.png" style="width: 100%; height: 100vh;">
+    <span id="speech" style="position: absolute; top: 50%; right: 50%; color: white;"></span>
+  </div>
+  <audio src="/audio/sweeping.wav" autoplay loop />
+  <audio src="/audio/speak2_deeper.wav" id="speak" />
 </body>
 </html>
+
+<!-- clean this up eventually -->
